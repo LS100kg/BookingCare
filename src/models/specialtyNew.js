@@ -1,7 +1,7 @@
 "use strict";
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class Specialty extends Model {
+  class specialtyNew extends Model {
     /**
      * HhistoriesUselper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Specialty.init(
+  specialtyNew.init(
     {
       name: DataTypes.STRING,
       descriptionHTML: DataTypes.TEXT,
@@ -20,8 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "Specialty",
+      modelName: "specialtyNew",
     }
   );
-  return Specialty;
+  return specialtyNew;
 };
