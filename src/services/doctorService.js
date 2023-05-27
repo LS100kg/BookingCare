@@ -141,7 +141,7 @@ let saveDetailInforDoctor = (inputData) => {
           doctorInfor.addressClinic = inputData.addressClinic;
           doctorInfor.note = inputData.note;
           doctorInfor.specialtyId = inputData.specialtyId;
-          doctorInfor.clicnicId = inputData.clicnicId;
+          doctorInfor.clinicId = inputData.clinicId;
           await doctorInfor.save();
         } else {
           //create
@@ -154,7 +154,7 @@ let saveDetailInforDoctor = (inputData) => {
             addressClinic: inputData.addressClinic,
             note: inputData.note,
             specialtyId: inputData.specialtyId,
-            clicnicId: inputData.clicnicId,
+            cliniId: inputData.cliniId,
           });
         }
 
